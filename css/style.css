@@ -5,8 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-}
+    position: relative;
 
+}
+body{
+    background-color: #f3f3f3;
+
+}
 a {
     text-decoration: none;
 }
@@ -16,21 +21,22 @@ footer,
 #nav,
 main,
 .arriba,
-.abajo{
-    width: 100vw;
+.abajo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 main {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #f3f3f3;
     padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    min-height: 100vh;
 
 }
 
@@ -274,49 +280,75 @@ footer {
     background: #222;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    
     height: fit-content;
+   
 }
-.arriba{
+
+.arriba {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap:10rem;
+    width: 100%;
+    height:fit-content;
 }
-.abajo{
-display:flex;
-justify-content: center;
-align-items: center;
-height: 2rem;
-padding:1rem 0rem;
-background-color: #f3f3f3;
-margin-bottom: -1.5rem;
+
+.abajo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 1rem 0rem;
+    background-color: #f3f3f3;
+    margin-bottom: -1.5rem;
+    width: 100%;
 }
+
 .footerIzq {
+    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+
 }
 
 .footerDer {
     padding-bottom: 1.5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.footerDer h2 {
+.subFooterDer {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.subFooterDerh2 {
     color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 .redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .fa-twitter {
     color: #14aed0;
+    
 
 
 }
@@ -397,7 +429,7 @@ margin-bottom: -1.5rem;
         align-self: center;
     }
 
-    footer {
+    .arriba, .abajo {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -410,38 +442,44 @@ margin-bottom: -1.5rem;
     }
 
 }
+
 /* mediaqueries para fontsize */
 /* Pantallas grandes*/
 
 @media (min-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
+    html {
+        font-size: 20px;
+    }
 }
+
 /*tablets grandes y small laptops */
 
 @media (max-width: 1200px) {
     html {
-      font-size: 18px;
+        font-size: 18px;
     }
-  }
-/*tabletas mayores*/ 
+}
+
+/*tabletas mayores*/
 
 @media (max-width: 996px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
-/*tablets chicas*/ 
+
+/*tablets chicas*/
 
 @media (max-width: 768px) {
     html {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
+}
+
 /* Celulares */
 
 @media (max-width: 450px) {
-  html {
-    font-size: 12px;
-  }}
+    html {
+        font-size: 12px;
+    }
+}
