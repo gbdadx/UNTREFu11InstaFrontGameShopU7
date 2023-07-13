@@ -483,3 +483,11 @@ footer {
         font-size: 12px;
     }
 }
+
+/* Celulares extrasmall */
+
+@media (max-width: 300px) {
+    html {
+        font-size: 10px;
+    }
+}
