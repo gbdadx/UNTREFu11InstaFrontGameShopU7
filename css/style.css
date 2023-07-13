@@ -8,10 +8,12 @@
     position: relative;
 
 }
-body{
+
+body {
     background-color: #f3f3f3;
 
 }
+
 a {
     text-decoration: none;
 }
@@ -207,18 +209,21 @@ h1 {
 .envio {
     color: #7eaf30;
 }
-.cardImg{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height:19rem;
+
+.cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19rem;
 }
-.cardImg img{
+
+.cardImg img {
     height: 85%;
     align-self: center;
 }
+
 .cardLine {
-    margin: 0.2rem 0rem ;
+    margin: 0.2rem 0rem;
     width: 100%;
     border-top: 1px solid black;
 }
@@ -290,9 +295,9 @@ footer {
     background: #222;
     display: flex;
     flex-direction: column;
-    
+
     height: fit-content;
-   
+
 }
 
 .arriba {
@@ -301,7 +306,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height:fit-content;
+    height: fit-content;
 }
 
 .abajo {
@@ -342,7 +347,7 @@ footer {
 
 .subFooterDerh2 {
     color: white;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -358,7 +363,7 @@ footer {
 
 .fa-twitter {
     color: #14aed0;
-    
+
 
 
 }
@@ -376,6 +381,18 @@ footer {
 
 /*  media queries  */
 
+
+/*   Small devices ( phones, less than 400px)    */
+@media only screen and (max-width : 450px) {
+
+    #sectionProductGallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 /*   Small devices (landscape phones, less than 768px)    */
 @media only screen and (max-width : 768px) {
@@ -439,7 +456,8 @@ footer {
         align-self: center;
     }
 
-    .arriba, .abajo {
+    .arriba,
+    .abajo {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -481,6 +499,13 @@ footer {
 /*tablets chicas*/
 
 @media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* celus grandes */
+@media (max-width: 550px) {
     html {
         font-size: 14px;
     }
